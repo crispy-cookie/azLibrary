@@ -30,3 +30,6 @@ The server sends JSON files with encrypted content (server has zero knowledge) t
 
 ## License
 This project is unlicensed
+
+
+(license might change in the future to AGPL)
