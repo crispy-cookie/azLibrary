@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StartTreeV2</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <!-- <link href="colors.css" rel="stylesheet" type="text/css"/> -->
+    <link rel="alternate icon" type="image/svg" href="logos/home.svg">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="dns-prefetch" href="https://https://studip.hochschule-trier.de/" />
+    <link rel="preconnect" href="https://https://studip.hochschule-trier.de/" crossorigin="anonymous" />
+    <meta name="robots" content="nofollow">
+    <meta name="description" content="Sammlung von Startlinks">
+  </head>
+  <body>
+    <style>
+      img {
+        height: 5vw;
+        min-height: 30px;
+        max-height: 80px;
+        width: auto
+      }
+    </style>
+    <nav>
+      <div style="display:block; margin: 12px;">
+        <form id="search_form_homepage" class="search--home  js-search-form search--adv" target="_blank" rel="noreferrer noopener" name="x" method="GET" action="https://html.duckduckgo.com/html">
+          <input type="text" autocomplete="on" id="delSearchBarInput" name="q" tabindex="1" value="" autocapitalize="off" autocorrect="off" placeholder="DuckDuckGo">
+          <input type="submit" tabindex="2" value="S">
+          <input type="button" id="delSearchBarBtn" tabindex="3" value="X"><!-- Suchbegriff löschen -->
+          <input type="hidden" name="kl" value="de-de"><!-- Suchregion Deutschland -->
+          <input type="hidden" name="kae" value="d"><!-- Dunkles Farbschema -->
+          <input type="hidden" name="ia" value="web"><!-- Quelle -->
+        </form>
+      </div>
+    </nav>
+    <main>
+      <!-- </details>-->
+      <details open="" id="sozial">
+        <summary>Category 01</summary>
+        <ul>
+          <li>
+            <div class="card">
+              <a href="https://www.messenger.com/e2ee/t/6587951767961983" rel="noreferrer noopener">
+                <div class="cardImg" style="background-image: url(logos/coloured/icons8-facebook-messenger_redblue.svg);" alt="Messenger" loading="lazy"></div>
+                <p>Item 01</p>
+              </a>
+            </div>
+          </li>
+          
+        </ul>
+      </details>
+      
+      <!-- <details id="pocketartikel">
+        <summary>Pocket Artikel</summary>
+        <article></article>
+      </details>
+      <details id="nachrichten">
+        <summary>Nachrichten</summary>
+        <article></article>
+      </details>
+      <details id="wetter">
+        <summary>Wetter</summary>
+        <article></article>
+      </details> -->
+    </main>
+    <script defer="">
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js');
+        });
+      }
+
+      const delSearchBarBtn = document.getElementById('delSearchBarBtn');
+      const delSearchBarInput = document.getElementById('delSearchBarInput');
+    
+      delSearchBarBtn.addEventListener('click', clearSearchInput)
+      async function clearSearchInput() {
+        delSearchBarInput.value = '';
+        delSearchBarInput.focus();
+        return true
+      }
+      
+      /*
+      const pocketartikel = document.getElementById('pocketartikel');
+      const nachrichten = document.getElementById('nachrichten');
+      const wetter = document.getElementById('')
+      ;*/
+      
+      /* Hole das Details-Element
+      // const details = document.querySelector('details');
+      const medien1 = document.getElementById('medien1');
+      const blogs = document.getElementById('blogs');
+
+      async function hideDetails(details, hours) {
+        // Überprüfe, ob die Stunde zwischen 6 und 18 Uhr liegt
+        if (hour >= 6 && hour < 18) {
+          // Setze das "open"-Attribut auf true
+          details.removeAttribute('open');
+          console.log('true')
+        } else {
+          // Setze das "open"-Attribut auf false
+          details.setAttribute('open', true);
+          console.log('false')
+        }
+      }
+    
+      // Erstelle ein neues Date-Objekt
+      const now = new Date();
+
+      // Hole die aktuelle Stunde
+      const hour = now.getHours();
+
+      hideDetails(medien1, hour);
+      hideDetails(blogs, hour);
+    
+      // Jede Stunde Aktualisieren
+      setInterval(() => {
+        // Erstelle ein neues Date-Objekt
+        const now = new Date();
+
+        // Hole die aktuelle Stunde
+        const hour = now.getHours();
+
+        hideDetails(medien1, hour);
+        hideDetails(blogs, hour);
+      }, 3600000)
+      */
+    </script>
+  </body>
+</html>

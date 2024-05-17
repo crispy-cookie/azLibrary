@@ -1,0 +1,202 @@
+html {
+  scroll-behavior: smooth;
+  background-color: #032605;
+}
+body {
+  background-color: #032605;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  text-align: center;
+  /*
+  background-image: url('logos/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  */
+  margin:0;
+}
+main {
+  padding-bottom: 5vw;
+}
+summary {
+  cursor: grab;
+  /* cursor: pointer; */
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+ul {
+  cursor: default;
+  display: block;
+  padding: 0;
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+li {
+  display: inline-block;
+  width: 12vw;
+  min-width: 170px;
+  margin: 0;
+}
+/*li {
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  max-width: 160px;
+  /* margin: 5px; * /
+  /* border: 1PX solid #78f2ff; * /
+  border: 1px solid #404040;
+}*/
+
+a, a:visited {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 0.7vw 0;
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  color: #95deff;
+  background-color: #002a03;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+a:hover, a:focus {
+  color: #ddd;
+  background-color: #004201;
+}
+
+.card {
+  /* border: 1px solid #ccc;
+     border-radius: 4px; */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 100%;
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  filter: grayscale(90%);
+}
+.card:hover {
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  filter: none;
+}
+
+
+.cardImg {
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height: 5vw;
+  margin: 0 4vw;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-height: 80px;
+  /* width: 80px; */
+  max-width: 80px; 
+  margin: 0;
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+p {
+  margin: 0;
+  padding: 0.6vw;
+  text-align: center;
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+@media (prefers-color-scheme: light) {
+  background-color: white;
+  color: black;
+}
+
+
+/* Suchleisten-Container */
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+/* Suchleisten-Formular */
+form {
+  display: flex;
+  align-items: center;
+  background-color: #363636;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  height: 48px;
+  overflow: hidden;
+  width: 21vw;
+}
+
+input {
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Suchleisten-Texteingabe */
+input[type="text"] {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1em;
+  height: 100%;
+  padding: 0 10px;
+  width: 100%;
+}
+
+/* Suchleisten-Suchbutton */
+input[type="submit"] {
+  background-color: #1b761d;
+  border: none;
+  color: #fff;
+  font-size: 1em;
+  height: 100%;
+  padding: 0 10px;
+  width: 21vw;
+}
+
+/* Suchleisten-Löschen-Button */
+input[type="button"] {
+  background-color: #720f23;
+  border: none;
+  color: #f00;
+  font-size: !1em;
+  height: 100%;
+  padding: 0 10px;
+  width: 21vw;
+}
+
