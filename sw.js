@@ -2,10 +2,12 @@ const CACHE_NAME = 'my-cache';
 
 const urlsToCache = [
   '/',
+  'favicon.ico',
   'manifest.json',
   'sw.js',
-  '/style.css'/*,
-  '/logos/img.png'*/
+  '/static/',
+  '/static/style.css',
+  '/static/home.svg'
 ];
 
 const cacheResources = async () => {

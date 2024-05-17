@@ -1,27 +1,32 @@
-# Startpage
+# Project azLibrary
 
 ## Description
-Startpage with bookmarks.
+Library of my ~secrets~ books served by zero-knowledge server.
 
-## Page
-- [Github.io](https://crispy-cookie.github.io/startpage/)
-- [Replit](https://replit.com/@cc04411/startpage#README.md)
-- [Render](startpagecc.onrender.com)
+## sitemap / Features
+- [ ] index.html | Show collection of all books / articles & password request
+- [ ] book | show book
+- [ ] generate | generate an encrypted json file
 
-## Features
-- [x] search bar
-- [x] categories
-- [x] offline (with Service Worker)
-- [x] PWA
-- [x] lots of logos
-- [ ] Dynamically edit bookmarks
-- [ ] user preferences
-- [ ] Save preferences in localStorage
-
-## How to host
+## Host
 ```bash
-# will add later
+# will add later once I've cleaned up properly :D
 ```
+
+## idea
+### problem
+A library of texts is to be created. Due to potential copyright reasons, these should only be accessible after authentication.
+
+### Client
+The client decrypts received JSON and displays readable text.
+
+### Server
+The server sends JSON files with encrypted content (server has zero knowledge) to the client.
+
+## Links
+- [Github.io](https://crispy-cookie.github.io/azLibrary/)
+- [Replit](https://replit.com/@cc04411/azLibrary#README.md)
+- [Render](azlib.onrender.com)
 
 ## License
 This project is unlicensed
